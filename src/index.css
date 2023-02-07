@@ -56,11 +56,11 @@ code {
   bottom: -4px;
   left: 20px;
 }
-.mobile i {
-   color: black;
+.mobile {
+  display: block;
+  align-items: center;
+  justify-content: end;
 }
-
-
 
 
 

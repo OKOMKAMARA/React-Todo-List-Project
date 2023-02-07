@@ -1,15 +1,18 @@
 import React from 'react'
 import mainlogo from "../assets/images/logo.png"
 
+
 const Navbar = () => {
   return (
     
     // <header className='header'>
     <>
-    
+   
     <nav className='nav-header'>
-        <img src={mainlogo} alt="loading" />
-        <ul className="navbar">
+      <a href='index.#'>
+         <img src={mainlogo} alt="loading" />
+      </a>
+   <ul className="navbar">
            <li>
             <a className="active"
             href="index.html">Home</a>
@@ -17,14 +20,12 @@ const Navbar = () => {
             <li>
               <a href='index.html'>Find Jobs</a>
             </li>
-           </ul>
-           
-          <ul className='mobile'>
+            </ul>
+         <ul className='mobile'>
           <i className='fas fa-bars'></i>
             <i className='fas fa-times'>
           </i>
          </ul>
-
       </nav>
      </>
 //  </header>

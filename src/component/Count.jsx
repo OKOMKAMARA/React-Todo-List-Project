@@ -1,28 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
-const Count = () => {
-    const [ jokes, setJokes ] = useState(0)
-   
-    useEffect(() => {
-    async function fetchData() {
-    try {
-        const response = await fetch("https://api.humorapi.com/jokes/search?number=3&keywords=horse,man")
-        const data = await response.json()
-
-        setJokes(data)
-        console.log(data)
-    } catch(error) {
-        console.log("error")
-    }
-    }
-    fetchData()
-       },[])
+const getCurrentTime = () => {
+    const getCurrentTime = new Date().toTimeString()
   return (
-   <div>
-    <button onClick={jokes}>Click</button>
-   </div>
-   
+    <div>
+      <p>The current time is {getCurrentTime}</p>
+    </div>
   )
 }
 
-export default Count
+export default getCurrentTime
