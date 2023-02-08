@@ -90,7 +90,7 @@ code {
    display: flex;
   }
  
-.navbar li {
+.mobile-menu-container li {
   list-style: none;
   padding: 0 15px;
   position: relative; 
@@ -98,7 +98,7 @@ code {
   padding: 0 15px;
   
  }
-.navbar li a {
+.mobile-menu-container li a {
   list-style: none;
   text-decoration: none;
   font-size: 1.2rem;
