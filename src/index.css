@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.header {
+/* .header {
   padding: 0;
   margin: 0;
  }
@@ -56,13 +56,64 @@ code {
   bottom: -4px;
   left: 20px;
 }
-.mobile {
-  display: block;
-  align-items: center;
-  justify-content: end;
+.nav-mobile ul i {
+  float: right;
+  display: flex;
+} */
+
+.header {
+  padding: 15px 0;
+  color: #77838f;
+  background: #eee;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 6px 15px rgb ( 64, 79, 104 / 5%);
+  display: block;  
+  border-bottom: 1px solid #ecef2e;
 }
+.logo {
+   padding: 25px;
+   max-width: 100%;
+   height: auto;
+   vertical-align: middle;
+   box-sizing: border-box;
+   text-decoration: none;
+   color: #202124;
+}
+.navbar {
+   display: inline-block; 
+   align-items: center;
+  justify-content: space-between;
+   list-style: none;
+   position: relative;
+   padding: 20px;
+   display: flex;
+  }
+ 
+.navbar li {
+  list-style: none;
+  padding: 0 15px;
+  position: relative; 
+  display: inline-block;
+  padding: 0 15px;
+  
+ }
+.navbar li a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 200;
+  transition: 0.3s ease-in-out;
+  color: black;
+  display: inline-block;
+  justify-content: space-between;
+ }
+ .menu-login {
+  display: inline-block;
+  align-items: start;
+  justify-content: space-between;
 
-
+}
 
 
 
