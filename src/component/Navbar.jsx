@@ -10,6 +10,7 @@ const Navbar = () => {
        <img src={mainlogo} alt="Careers SL"/>
       </a>
         <nav className='navbar'>
+          <div className="mobile-menu-container">
            <ul className='menu-main-menu'>
               <li >
               <a href="https://careers.sl">Home</a>
@@ -18,6 +19,7 @@ const Navbar = () => {
                 <a href="https://careeres.sl">Find Jobs</a>
               </li>
             </ul>
+            </div>
         </nav>
         <div className= "login-menu">
           <Login />

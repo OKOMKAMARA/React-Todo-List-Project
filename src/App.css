@@ -1,1 +1,53 @@
-    
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 600px;
+    background-color: white;
+    text-align: center;
+    margin: 90px auto;
+    border-radius: 18px;
+    padding-bottom: 30px;
+}
+.header {
+    margin: 32px 0;
+    font-size: 25px;
+}
+.input-add {
+    padding: 10px;
+    margin: 10px;
+     border-radius: 5px;
+     border: 2px solid #5d0cff;
+     width: 320px;
+     background: transparent;
+     color: black;
+}
+.input-edit {
+     padding: 10px;
+     margin: 5px;
+     border-radius: 5px;
+     border: 2px solid #5d0cff;
+    box-shadow: 10px 5px 5px rgb(139, 123, 169);
+    width: 300px;
+    background: transparent;
+    color: black;
+}
+.edit-button,
+ .add-button {
+      padding: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: none;
+      background: linear-gradient(
+        90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+     );
+     color: #fff;
+     text-transform: capitalize;
+ }
+ 
+
+
