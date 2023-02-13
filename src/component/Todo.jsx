@@ -4,9 +4,9 @@ import TodoList from './TodoList'
 
 const Todo = () => {
     const [todos, setTodos ] = useState([
-        {text: "Learn React", isCompleted: false},
-        {text: "Learn Javascript", isCompleted: false},
-        {text: "Learn Python", isCompleted: false}
+        //  {text: "Learn React", isComplete: false},
+        // {text: "Learn Javascript", isComplete: false},
+        // {text: "Learn Python", isComplete: false}
     ])
 
     const addTodo = (todo) => {
@@ -24,6 +24,15 @@ const Todo = () => {
 
         setTodos(removedArg)
     }
+    const completeTodo = (id) => {
+            let updatedTodo = todos.map((todo) => {
+               if(todo.id === id) {
+                todo.isCompleted = !todo.isCompleted;
+               }
+               return todo
+            });
+            setTodos(updatedTodo)
+    }
   return (
     <div>
       <h1 className="header">Add your Plan for Today?</h1>
@@ -31,7 +40,9 @@ const Todo = () => {
       <TodoList 
       todos={todos} 
       updateTodo={updateTodo}
-      removeTodo={removeTodo}/>
+      removeTodo={removeTodo}
+      completeTodo={completeTodo}
+      />
     </div>
   )
 }

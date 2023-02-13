@@ -18,7 +18,7 @@
     padding: 10px;
     margin: 10px;
      border-radius: 5px;
-     border: 2px solid #5d0cff;
+     border: 2px solid #8051df;
      width: 320px;
      background: transparent;
      color: black;
@@ -48,6 +48,50 @@
      color: #fff;
      text-transform: capitalize;
  }
+ .icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    }
+.delete-icon {
+        margin-right: 5px;
+        color: red;
+    }
+.edit-icon {
+        color: skyblue;
+    }
+.todo-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 4px auto;
+      color: #fff;
+    background: linear-gradient(
+      90deg,
+    rgb(144, 10, 211) 0%,
+    rgb(235, 230, 228) 100%
+    );
+    padding: 16px; 
+    border-radius: 5px;
+    width: 380px;
+    }
+.todo-complete{
+         text-decoration: line-through;
+         opacity: 0.4;
+         align-items: center;
+         margin: 4px auto;
+         background: linear-gradient(
+            90deg,
+            rgb(140, 97, 160) 0%,
+            rgb(235, 230, 228) 100%
+          );
+          padding: 16px;
+          border-radius: 5px;
+          width: 380px;
+    }
+    
+
  
 
 
